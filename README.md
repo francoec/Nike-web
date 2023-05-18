@@ -17,10 +17,10 @@ Tener instalado:
 
 1. Clona el repositorio:
    ```bash
-   git clone <URL_DEL_REPOSITORIO>
+   gh repo clone francoec/Nike-web
 2. Navega al directorio del proyecto:
    ```bash
-   cd nombre-del-proyecto
+   cd Nike-web
 3. Instala las dependencias del proyecto:
    ```bash
    npm install
