@@ -9,9 +9,9 @@ Este proyecto fue realizado con:
     npm create vite@latest.
    ```
 ## Requisitos previos
-
-- Node.js (versión X.X.X)
-- npm (versión X.X.X)
+Instalar: 
+- Node.js
+- npm
 
 ## Configuración del proyecto
 
