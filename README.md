@@ -14,13 +14,13 @@ Este proyecto fue realizado con: npm create vite@latest.
 ## Configuración del proyecto
 
 1. Clona el repositorio:
-
+   ```bash
    git clone <URL_DEL_REPOSITORIO>
    
 2. Navega al directorio del proyecto:
-  
+  ```bash
   cd nombre-del-proyecto
   
 3. Instala las dependencias del proyecto:
-
+  ```bash
   npm install
