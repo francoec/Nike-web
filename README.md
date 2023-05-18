@@ -5,9 +5,9 @@ Este repositorio es un proyecto de e-commerce básico sobre la marca Nike, desar
 El objetivo principal de este proyecto es aumentar los conocimientos sobre las tecnologías de React y Vite, así como practicar el desarrollo de interfaces de usuario utilizando componentes y estilos de Bootstrap. (Sin fines comerciales)
 
 Este proyecto fue realizado con: 
-   ```bash
+    ```bash
     npm create vite@latest.
-   ```
+    ```
 ## Requisitos previos
 Tener instalado: 
 - Node.js
