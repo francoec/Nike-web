@@ -6,7 +6,7 @@ El objetivo principal de este proyecto es aumentar los conocimientos sobre las t
 
 Este proyecto fue realizado con: 
    ```bash
-   npm create vite@latest.
+    npm create vite@latest.
    ```
 ## Requisitos previos
 
@@ -22,5 +22,5 @@ Este proyecto fue realizado con:
    ```bash
    cd nombre-del-proyecto
 3. Instala las dependencias del proyecto:
-  ```bash
+   ```bash
    npm install
