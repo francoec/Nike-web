@@ -9,7 +9,7 @@ Este proyecto fue realizado con:
     npm create vite@latest.
    ```
 ## Requisitos previos
-Instalar: 
+Tener instalado: 
 - Node.js
 - npm
 
