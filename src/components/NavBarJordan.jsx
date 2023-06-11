@@ -2,6 +2,7 @@ import React from 'react';
 import jordanLogo from '../../public/jordan.svg'
 import { Link } from 'react-router-dom'
 
+
 const Navbar = () => {
   return (
     <nav className="navbar navbar-light bg-light">

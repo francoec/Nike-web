@@ -1,10 +1,10 @@
 import React from 'react';
-
+import ItemList from './itemList'
 
 const ItemListContainer = () => {
   return( 
     <h1>
-    Hola soy un futuro itemList
+      <ItemList />
     </h1>
   )
 }
