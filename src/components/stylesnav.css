@@ -1,4 +1,25 @@
-#cart {
+@media (max-width: 998px) {
+    .navbar-toggler {
+      display: none;
+    }
+  
+    .navbar-brand {
+      display: none;
+    }
+  
+    .form-inline {
+      display: none;
+    }
+  }
+  
+  @media (min-width: 999px) {
+    .navbar-collapse {
+      display: block !important;
+    }
+  }
+
+  #cart {
     background-color: white;
     border: none;
 }
+

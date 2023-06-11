@@ -1,39 +1,46 @@
-import React from 'react'
-import './stylesnav.css'
-import CartWidget from './CartWidget'
+import React, { useState } from 'react';
+import './stylesnav.css';
+import nikeLogo from "../../public/nike2.svg";
+import CartWidget from './CartWidget';
+import { Link } from 'react-router-dom';
 
-const Navbar2 = () =>{
-    return(
-        <>
-        <nav class="navbar navbar-expand-lg navbar-light">
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
+const Navbar2 = () => {
+  const [isCollapsed, setIsCollapsed] = useState(true);
+
+  const toggleCollapse = () => {
+    setIsCollapsed(!isCollapsed);
+  };
+
+  return (
+    <>
+      <nav className="navbar navbar-expand-lg navbar-light">
+        <button className="navbar-toggler" type="button" onClick={toggleCollapse}>
+          <span className="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
-        <img src="../public/nike2.svg" width="50" height="50" alt=""/>
-            
-            <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
-            <li class="nav-item active">
-                <a class="nav-link" href="#">Destacado <span class="sr-only">(current)</span></a>
+        <div className={`collapse navbar-collapse ${isCollapsed ? '' : 'show'}`} id="navbarTogglerDemo01">
+          <Link to={"/"}><img src={nikeLogo} width="50" height="50" alt="Nike Logo" /></Link>
+          <ul className="navbar-nav mr-auto mt-2 mt-lg-0">
+            <li className="nav-item active">
+              <Link className="nav-link" to={"/Trend"}>Destacado <span className="sr-only">(current)</span></Link>
             </li>
-            <li class="nav-item">
-            <a class="nav-link" href="#">Hombre</a>
+            <li className="nav-item">
+              <Link className="nav-link" to={"/Men"}>Hombre</Link>
             </li>
-            <li class="nav-item">
-                <a class="nav-link disabled" href="#">Mujer</a>
+            <li className="nav-item">
+              <Link className="nav-link" to={"/Women"}>Mujer</Link>
             </li>
-            <li class="nav-item">
-                <a class="nav-link disabled" href="#">Niño/a</a>
+            <li className="nav-item">
+              <Link className="nav-link" to={"/kids"}>Niño/a</Link>
             </li>
-            </ul>
-            <form class="form-inline my-2 my-lg-0">
-            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search"/>
-            <CartWidget/>
-            </form>
+          </ul>
+          <form className="form-inline my-2 my-lg-0">
+            <input className="form-control mr-sm-2" type="search" placeholder="Buscar" aria-label="Buscar" />
+            <CartWidget />
+          </form>
         </div>
-        </nav>
-        </>
-    )
+      </nav>
+    </>
+  );
 }
 
-export default Navbar2
+export default Navbar2;
